@@ -8,8 +8,7 @@ In data\custom.yaml, change the path of the corresponding detection and segmenta
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig2.png)
 ## Visualization results
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig6.png)
-## results
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+## Quantitative results<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:42.35pt'>
