@@ -1,6 +1,8 @@
 # MTMLNet: Multi-task Mutual Learning Network for Infrared Small Target Detection and Segmentation
 ## Usage
 ### Requirements
+Tested on Linux , with Python 3.8, PyTorch 2.1.2, cuda 11.8.
+pip install the requirements.txt
 ### Dataset
 In data\custom.yaml, change the path of the corresponding detection and segmentation label dataset.
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig.jpg)
