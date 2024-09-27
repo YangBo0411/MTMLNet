@@ -1,0 +1,51 @@
+# YOLOv9
+
+nc: 1  # number of classes
+n_segcls: 2 # 多一个分割类别数
+depth_multiple: 1  # model depth multiple
+width_multiple: 1 # layer channel multiple
+
+# anchors
+anchors: 3
+
+
+# YOLOv9 backbone
+backbone:
+  [
+   [-1, 1, Conv, [64, 3, 2]],  # 0-P1/2
+   [-1, 1, Conv, [128, 3, 2]],  # 1-P2/4
+   [-1, 1, MEA, [256]],  # 2
+   [-1, 1, HPDown, [256]],  # 3P3/8
+   [-1, 1, MEA, [512 ]],  # 4
+   [-1, 1, HPDown, [512]],  # 5-P4/16
+   [-1, 1, MEA, [512 ]],  # 6
+  ]
+# YOLOv9 head
+head:
+  [
+   [-1, 1, SPPELAN, [512, 512]],  # 7
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[-1, 4], 1, Fusion, []],  # cat backbone P4
+   [-1, 1, MEA, [512 ]],  # 10
+
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [ -1, 1, Conv, [ 256 ] ],
+   [[-1, 2], 1, Fusion, []],  # cat backbone P3
+   [-1, 1, MEA, [256 ]],  # 14 (P3/8-small
+
+   [-1, 1, HPDown, [512]],
+   [[-1, 10], 1, Fusion, []],  # cat head P4
+   [-1, 1, MEA, [512 ]],  # 17 (P4/16-medium)
+
+   [-1, 1, HPDown, [512]],
+   [[-1, 7], 1, Fusion, []],  # cat head P5
+   [-1, 1, MEA, [512 ]],  # 20 (P5/32-large)
+
+   [ [ 2, 14 ], 1, HFF, [ ] ], # 20 (P3/8-small)
+   [ [ 4, 17 ], 1, HFF, [ ] ], # 21 (P4/16-medium)
+   [ [ 6, 20 ], 1, HFF, [ ] ], # 22 (P5/32-large)
+
+#   [[4, 19], 1, SegMaskLab, [n_segcls, 3, 256, False]],  # 语义分割头通道配置256,[]内n为３
+   [ [ 21, 22, 23 ], 1, SegMask, [ n_segcls, 3, 256, False ] ],  # 语义分割头通道配置256
+   [ [ 21, 22, 23 ], 1, Detect, [ nc ] ],  # DualDDetect(A3, A4, A5, P3, P4, P5)
+  ]

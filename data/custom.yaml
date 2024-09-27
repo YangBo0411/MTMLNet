@@ -1,0 +1,14 @@
+
+# detect
+train: /home/wuren123/yb/multi task/multi task/data/customdata/images/train
+val: /home/wuren123/yb/multi task/multi task/data/customdata/images/val
+test: /home/wuren123/yb/multi task/multi task/data/customdata/images/test
+
+# segment
+segtrain: /home/wuren123/yb/multi task/multi task/data/customdata
+segval: /home/wuren123/yb/multi task/multi task/data/customdata
+segtest: /home/wuren123/yb/multi task/multi task/data/customdata
+# number of detection classes
+nc: 1
+# class names
+names: ['target']
