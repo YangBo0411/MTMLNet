@@ -3,7 +3,8 @@
 ### Requirements
 ### Dataset
 In data\custom.yaml, change the path of the corresponding detection and segmentation label dataset.
+![image]()
 ## The overall architecture
-![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig2.png)
+![image]()
 ## Visualization results
-![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig6.png)
+![image]()
