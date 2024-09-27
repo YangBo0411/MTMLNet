@@ -5,7 +5,7 @@ Tested on Linux , with Python 3.8, PyTorch 2.1.2, cuda 11.8.
 pip install the requirements.txt
 ### Dataset
 In data\custom.yaml, change the path of the corresponding detection and segmentation label dataset.
-![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig.jpg)
+![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig1.jpg)
 ## The overall architecture
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig2.png)
 ## Visualization results
