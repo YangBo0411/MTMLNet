@@ -1,4 +1,7 @@
 # MTMLNet: Multi-task Mutual Learning Network for Infrared Small Target Detection and Segmentation
+## The overall architecture
+![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig2.png)
+
 ## Usage
 ### Requirements
 Tested on Linux , with Python 3.8, PyTorch 2.1.2, cuda 11.8.
@@ -6,12 +9,11 @@ pip install the requirements.txt
 ### Dataset
 In data\custom.yaml, change the path of the corresponding detection and segmentation label dataset.
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig1.jpg)
-## The overall architecture
-![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig2.png)
+
 ## Visualization results
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig6.png)
 ## Quantitative results
-The model of MTMLNet weight can be downloaded from [Google Drive](https://drive.google.com/file/d/1ighrySCcrAsMxPOFLaqATxBvxbUN2Jwj/view?usp=drive_link) or with [BaiduYun Drive]([https://pan.baidu.com/s/1Gv1gMCdajtR8pR76Y4iQhg](https://pan.baidu.com/s/1dfhUvqGMnBwOQdd_W0gVSA?pwd=mpad )).
+The model of MTMLNet weight can be downloaded from [Google Drive](https://drive.google.com/file/d/1ighrySCcrAsMxPOFLaqATxBvxbUN2Jwj/view?usp=drive_link) or with [BaiduYun Drive](https://pan.baidu.com/s/1dfhUvqGMnBwOQdd_W0gVSA?pwd=mpad).
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
