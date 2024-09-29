@@ -11,7 +11,7 @@ In data\custom.yaml, change the path of the corresponding detection and segmenta
 ## Visualization results
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig6.png)
 ## Quantitative results
-[weight](https://drive.google.com/file/d/1ighrySCcrAsMxPOFLaqATxBvxbUN2Jwj/view?usp=drive_link)
+[MTMLNet weight](https://drive.google.com/file/d/1ighrySCcrAsMxPOFLaqATxBvxbUN2Jwj/view?usp=drive_link)
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
