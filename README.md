@@ -12,15 +12,15 @@ In data\custom.yaml, change the path of the corresponding detection and segmenta
 
 train:
 
-python train.py
+      python train.py
 
 test:
 
-python test.py
+      python test.py
 
 inference:
 
-python detect.py
+      python detect.py
 
 ## Visualization results
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig6.png)
