@@ -11,9 +11,11 @@ In data\custom.yaml, change the path of the corresponding detection and segmenta
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig1.jpg)
 
 train:
+
 python train.py
 
 test:
+
 python test.py
 
 ## Visualization results
