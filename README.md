@@ -18,6 +18,10 @@ test:
 
 python test.py
 
+inference:
+
+python detect.py
+
 ## Visualization results
 ![image](https://github.com/YangBo0411/MTMLNet/blob/main/fig6.png)
 ## Quantitative results
